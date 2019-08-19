@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
-__author__ = ['[Alex Colombari](http://github.com/alexcolombari)']
-__date__ = '2019.08.19'
+'''
+Author: Alex Colombari (http://github.com/alexcolombari)
+Date: 2019.08.19
+'''
 
 import os
 import time
