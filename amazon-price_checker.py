@@ -29,7 +29,7 @@ def send_mail(price, original_price):
     hour = datetime.now()
     subject = '[ALERT] Price fall down!'
     body = 'Original price: {}\nCurrent price: {}\nCheck the Amazon link: {}\n\n\n\
-    Sended in {} from Python Script'.format(original_price, price, URL, hour)
+Sended in {} from Python Script'.format(original_price, price, URL, hour)
     msg = "Subject: {}\n\n {}".format(subject, body)
 
     server.sendmail(email, email, msg)
