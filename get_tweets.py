@@ -5,15 +5,16 @@ import tweepy
 from textblob import TextBlob
 
 # Consume
-CONSUMER_KEY = ''
-CONSUMER_SECRET = ''
+cfg = { "CONSUMER_KEY": 'VALUE'
+"CONSUMER_SECRET": 'VALUE'
 # Access:
-ACCESS_TOKEN = ''
-ACCESS_TOKEN_SECRET = ''
+"ACCESS_TOKEN": 'VALUE'
+"ACCESS_TOKEN_SECRET": 'VALUE'
+}
 
 def connect_twitter_api():
-    auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
-    auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
+    auth = tweepy.OAuthHandler(cfg['CONSUMER_KEY'], cfg['CONSUMER_SECRET'])
+    auth.set_access_token(cfg['ACCESS_TOKEN'], cfg['ACCESS_TOKEN_SECRET'])
     api = tweepy.API(auth)
 
     return api
