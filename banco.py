@@ -166,7 +166,7 @@ class Banco:
         if opcao == 5:
             numero_conta = raw_input("Digite o numero da Conta Poupança: ")
             movimentacao = input("Digite o valor a se depositar: ")
-            agencia_Araras.depositar(numero_conta, movimentacao)
+            agencia_Araras.depositar(numero_conta, 0, movimentacao)
 
         if opcao == 6:
             numero_conta = raw_input("Digite o numero da Conta Poupança: ")
