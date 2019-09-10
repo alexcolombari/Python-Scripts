@@ -133,16 +133,11 @@ class Banco:
 
     while opcao != 0:
         print("Banco\n============")
-        print("1.\t Criar uma conta")
-        print("**********************************")
-        print("2.\t Deposito em conta corrente")
-        print("3.\t Saque em conta corrente")
-        print("4.\t Encontrar Conta Corrente")
-        print("**********************************")
-        print("5.\t Deposito em conta poupanca")
-        print("6.\t Saque em conta  poupanca")
-        print("7.\t Encontrar conta poupanca")
-        print("**********************************")
+        print("1.\t Criar uma conta\n**********************************")
+        print("2.\t Deposito em conta corrente\n3.\t Saque em conta corrente")
+        print("4.\t Encontrar Conta Corrente\n**********************************")
+        print("5.\t Deposito em conta poupanca\n6.\t Saque em conta  poupanca")
+        print("7.\t Encontrar conta poupanca\n**********************************")
         print("0.\t Encerrar sistema")
 
         opcao = input("\nEscolha uma opção: ")
