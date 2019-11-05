@@ -27,10 +27,14 @@ def angle_between(x, y):
 	divisao = x / y
 	return np.arccos(divisao)
 
-
-if __name__ == "__main__":
-
+def main():
 	clear_screen()
+
+	print("┌──────────────────────────────────────┐")
+	print("│                                      │")
+	print("│      Angle between two vectors       │")
+	print("│                                      │")
+	print("└──────────────────────────────────────┘")
 
 	v1 = input("Value of X1: ")
 	v2 = input("Value of Y1: ")
@@ -47,8 +51,11 @@ if __name__ == "__main__":
 	y = raiz(vetor1, vetor2)
 	xy = angle_between(x, y)
 
-	print("\nResult between two vectors: {:.2f}".format(xy))
+	print("\nResult between two vectors: {:.2f}\n".format(xy))
 
+
+if __name__ == "__main__":
+	main()
 
 '''	
 	Resultado:
