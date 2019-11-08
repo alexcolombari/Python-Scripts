@@ -13,7 +13,7 @@ class Schwarzschild:
 		self.mass = mass
 
 	def formula(self):
-		gravity_constant = 6.67 * 10**-11
+		gravity_constant = (6.67 * (10**-11))
 		light_velocity = 299792458 # 299 792 458 m/s
 
 		schwarzschild = (((2 * gravity_constant) * self.mass) / (light_velocity ** 2))
