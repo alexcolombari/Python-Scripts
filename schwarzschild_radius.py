@@ -1,6 +1,6 @@
 '''
 	Schwarzschild Radius appication
-	Author: Alex Colombari (http://github.com/alexcolombari)
+	Author: Alex Colombari (https://github.com/alexcolombari)
 	Date: 11-08-2019
 
 	References:
