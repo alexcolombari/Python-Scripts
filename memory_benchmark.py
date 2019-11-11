@@ -19,16 +19,14 @@ inp = (raw_input()if sys.version_info[0] < 3 else input())
 if inp:
 	maximum_memory = int(input("Enter the maxium memory to use (in percentage): "))
 	initial_time = time.time()
-	count = 0
 	number = 2
 	print("\nInitial memory usage: {}%".format(psutil.virtual_memory()[2]))
 	while True:
 		try:
 			if psutil.virtual_memory()[2] <= maximum_memory:
 			    number = number ** 2
-			    count += 1
-			    print("{} -> Memory usage: {}% || Free memory: {}|| CPU usage: {}%".format(count, psutil.virtual_memory()[2], psutil.virtual_memory()[4], psutil.cpu_percent()))
-			    time.sleep(0.2)
+			    print("Memory usage: {}% || CPU usage: {}%".format(psutil.virtual_memory()[2], psutil.cpu_percent()))
+			    time.sleep(0.05)
 			else:
 				print("\nAvailable memory exceeded!")
 				print("Elapsed time: {:.2f} seconds".format(time.time() - initial_time))
