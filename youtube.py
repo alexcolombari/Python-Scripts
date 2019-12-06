@@ -18,7 +18,7 @@ except:
     os.system("pip install bs4")
 
 
-    input_func = None
+input_func = None
 try:
     input_func = raw_input('Enter the song to be played: ')
 except NameError:
