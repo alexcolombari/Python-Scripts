@@ -11,9 +11,14 @@ Return: Play the song that you've searched
 import os
 import requests
 import webbrowser
-from bs4 import BeautifulSoup
 
-input_func = None
+try:
+    from bs4 import BeautifulSoup
+except:
+    os.system("pip install bs4")
+
+
+    input_func = None
 try:
     input_func = raw_input('Enter the song to be played: ')
 except NameError:
