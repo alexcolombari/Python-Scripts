@@ -1,5 +1,5 @@
 '''
-	Schwarzschild Radius appication
+	Schwarzschild Radius application
 	Author: Alex Colombari (http://github.com/alexcolombari)
 	Date: 11-08-2019
 
